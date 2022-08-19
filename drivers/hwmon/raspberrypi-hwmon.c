@@ -49,7 +49,7 @@ static void rpi_firmware_get_throttled(struct rpi_hwmon_data *data)
 		return;
 
 	if (new_uv)
-		dev_crit(data->hwmon_dev, "Undervoltage detected!\n");
+		dev_crit(data->hwmon_dev, "\nUndervoltage warning!\n");
 	else
 		dev_info(data->hwmon_dev, "Voltage normalised\n");
 
